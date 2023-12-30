@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Cashew</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+  <link rel="manifest" href="logo/site.webmanifest">
+  <link rel="mask-icon" href="logo/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#0073ab">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Document Stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Font-awesome Style-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Swiper Stylesheet
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+</head>
+
+<body>
+
+  <!--Header Section-->
+  <header>
+    <a href="" class="logo">Cashew Nuts</a>
+    <nav class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html">Order</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fa fa-bars" id="menu-bars"></i>
+      <i class="fa-solid fa-cart-shopping" id="open-cart"></i>
+      <i class="fa fa-user" id="user"></i>
+    </div>
+
+    <div class="cart">
+      <div class="title">Meu Carrinho</div>
+      <div class="empty-cart">
+        <h3>O seu carrinho esta vazio</h3>
+        <a href="#shop" class="btn" id="e-cart">Adicionar produtos</a>
+      </div>
+      <div class="cart-container">
+        <!--<div class="cart-content">
+          <img src="images/g1.png" alt="">
+          <div class="details">
+            <div class="title cart-title">Castanhas 1</div>
+            <div class="item-price">$26</div>
+            <input type="number" value="1" min="1" class="item-quantity">
+            <div class="buttons">
+              <span class="minius">&minus;</span><input type="text" value="01" id="value" class="value"><span class="add">&plus;</span>
+          </div>
+          </div>
+          <i class="fa-solid fa-trash remove-cart" id="remove-cart"></i>
+        </div>-->
+      </div>
+        <div class="total">
+          <div class="total-title">Total: </div>
+          <div class="total-price">$200</div>
+        </div>
+        <button class="btn btn-buy">Comprar</button>
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+    </div>
+  </header>
+  <!--Header end-->
+
+
+  <!--Swiper Section-->
+  <section class="home" id="home">
+    
+    <div class="container">
+      <div class="content">
+        <span>Our Special diesh</span>
+        <h3>speciy moodles</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          quod blanditiis reprehenderit.
+        </p>
+        <a href="#shop" class="btn orderBt">Order now</a>
+      </div>
+      
+      <!-- Slider main container 
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <div class="image swiper-slide">
+          <img src="images/g3.png" alt="" />
+        </div>
+      </div>
+    </div>-->-->
+
+    
+      <div class="image">
+        <img src="images/g3.png" alt="" />
+      </div>
+    </div>
+
+    
+
+  </section>
+  <!--Swiper Section-->
+
+
+  <!--About Section-->
+  <section class="about" id="about">
+    <h3 class="sub-heading">About us</h3>
+    <h1>Why choose us?</h1>
+    <div class="row">
+      <div class="image">
+        <img src="images/g4.png" alt="" srcset="" />
+      </div>
+      <div class="content">
+        <h3>best Cashew in the country</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+          dolorem deleniti rerum, repellat iste provident quia hic cum eaque.
+          Commodi, tenetur! Ratione veritatis expedita molestiae earum? Quidem
+          pariatur accusantium aspernatur.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+          fuga animi.
+        </p>
+        <div class="icons-container">
+          <div class="icons">
+            <i class="fa fa-shipping-fast"></i>
+            <span>free delivery</span>
+          </div>
+          <div class="icons">
+            <i class="fa fa-dollar-sign"></i>
+            <span>easy payments</span>
+          </div>
+          <div class="icons">
+            <i class="fa fa-headset"></i>
+            <span>24/24</span>
+          </div>
+          <a class="btn" href="about.html#services">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--About Section end-->
+
+  <!--Shop Section-->
+  <section class="shop" id="shop">
+    <h2>Shop products</h2>
+    <div class="container">
+      <div class="content">
+        <h2 class="product-title">Castanhas</h2>
+        <div class="img">
+          <img src="images/g2.png" alt="" class="product-img">
+        </div>
+        <span class="price product-price">$17</span>
+        <button class="btn addCart"><i class="fa-solid fa-cart-plus" ></i> Add to cart</button>
+      </div>
+
+      <div class="content">
+        <h2 class="product-title">Castanhas 2</h2>
+        <div class="img">
+          <img src="images/g1.png" alt="" class="product-img">
+        </div>
+        <span class="price product-price">$21</span>
+        <button class="btn addCart"><i class="fa-solid fa-cart-plus" ></i> Add to cart</button>
+      </div>
+
+      <div class="content">
+        <h2 class="product-title">Castanhas 3</h2>
+        <div class="img">
+          <img src="images/g3.png" alt="" class="product-img">
+        </div>
+        <span class="price product-price">$55</span>
+        <button class="btn addCart"><i class="fa-solid fa-cart-plus" ></i> Add to cart</button>
+      </div>
+    </div>
+</section>
+
+
+  <div class="toast">
+    <div class="toast-content">
+      <i class="fa-solid fa-trash toast-icon"></i>
+
+      <div class="message">
+        <span class="text-1 title">Success</span>
+        <span class="text-2 message-content">Your are loged with succes</span>
+      </div>
+
+      <i class="fa-solid fa-xmark" id="close-toast"></i>
+
+      <div class="progress pg"></div>
+    </div>
+  </div>
+
+
+  <!--Footer Section-->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+        <a href="faq.html">Faq</a>
+        <a href="#">Cart</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#">+258 84 123 4567</a>
+        <a href="#">+258 86 123 4567</a>
+        <a href="#">cashewnuts@gmail.com</a>
+        <a href="#">Manhica, Mozambique - 3002</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="#">facebook</a>
+        <a href="#">Istagram</a>
+        <a href="#">Whatsapp</a>
+      </div>
+    </div>
+    <div class="credit">&copy; 2022</div>
+  </section>
+  <!--Footer Section end-->
+
+  
+
+  <!--Swipper Library
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+  <!--Personal Script-->
+  
+  <script src="script.js" ></script>
+  <script src="other.js"></script>
+  <!--<script  src="script.js" type="module" ></script>-->
+  
+</body>
+</html>

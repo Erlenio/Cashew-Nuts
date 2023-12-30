@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+  <link rel="manifest" href="logo/site.webmanifest">
+  <link rel="mask-icon" href="logo/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#0073ab">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <header>
+    <a href="" class="logo">Cashew Nuts</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="#" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Order</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fa fa-bars" id="menu-bars"></i>
+      <i class="fa-solid fa-cart-shopping" id="open-cart"></i>
+      <i class="fa fa-user" id="user"></i>
+    </div>
+
+    <div class="cart">
+      <div class="title">Your cart</div>
+      <div class="cart-container">
+        <div class="cart-content">
+          <img src="images/g1.png" alt="">
+          <div class="details">
+            <div class="title cart-title">Castanhas 1</div>
+            <div class="item-price">$26</div>
+            <input type="number" value="1" min="1" class="item-quantity">
+          </div>
+          <i class="fa-solid fa-trash remove-cart" id="remove-cart"></i>
+        </div>
+
+      </div>
+      <div class="total">
+        <div class="total-title">Total: </div>
+        <div class="total-price">$200</div>
+      </div>
+      <button class="btn btn-buy">Buy Now</button>
+      <i class="fa-solid fa-xmark" id="close-cart"></i>
+    </div>
+  </header>
+
+
+  <section class="about about-section" id="about">
+    <h3 class="sub-heading">Quem Somos</h3>
+    <h1>Why choose us? </h1>
+    <div class="row">
+      <div class="image">
+        <img src="images/g4.png" alt="" srcset="">
+      </div>
+      <div class="content">
+        <h3>best Cashew in the country</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem deleniti rerum, repellat iste provident
+          quia hic cum eaque. Commodi, tenetur! Ratione veritatis expedita molestiae earum? Quidem pariatur accusantium
+          aspernatur.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam fuga animi.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h1>How we work? </h1>
+    <div class="row">
+      <div class="box">
+        <i class="fa-solid fa-moped"></i>
+        <h3>Entregas</h3>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem deleniti rerum, repellat iste
+            provident quia hic cum eaque. Commodi, tenetur! Ratione veritatis expedita molestiae earum? Quidem pariatur
+            accusantium aspernatur.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam fuga animi.</p>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Pagamentos</h3>
+        <div class="content">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem deleniti rerum, repellat iste
+            provident quia hic cum eaque. Commodi, tenetur! Ratione veritatis expedita molestiae earum? Quidem pariatur
+            accusantium aspernatur.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam fuga animi.</p>
+        </div>
+
+      </div>
+      <div class="box">
+        <i class="fa-thin fa-moped"></i>
+        <h3>Responsabi</h3>
+        <div class="content">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem deleniti rerum, repellat iste
+            provident quia hic cum eaque. Commodi, tenetur! Ratione veritatis expedita molestiae earum? Quidem pariatur
+            accusantium aspernatur.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam fuga animi.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="toast">
+    <div class="toast-content">
+      <i class="fa-solid fa-trash toast-icon"></i>
+
+      <div class="message">
+        <span class="text-1 title">Success</span>
+        <span class="text-2 message-content">Your are loged with succes</span>
+      </div>
+
+      <i class="fa-solid fa-xmark" id="close-toast"></i>
+
+      <div class="progress pg"></div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="faq.html">Faq</a>
+        <a href="#">Cart</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#">+258 84 123 4567</a>
+        <a href="#">+258 86 123 4567</a>
+        <a href="#">cashewnuts@gmail.com</a>
+        <a href="#">Manhica, Mozambique - 3002</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="#">facebook</a>
+        <a href="#">Istagram</a>
+        <a href="#">Whatsapp</a>
+      </div>
+    </div>
+    <div class="credit">&copy; 2022 by <span>Ers</span></div>
+  </section>
+
+  <script src="other.js"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="num">
+    <span class="num-text"></span>
+
+    <script>
+        let input = document.querySelector('.num');
+        let output = document.querySelector('.num-text');
+        let decimalArr = [20,30,40,50,60,70,80,90,10];
+        let centenasArr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+        let milharesArr = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000];
+        input.addEventListener('change', () =>{
+            
+            let mnum  = parseInt(input.value);
+            if(mnum >= 0 && mnum <= 9 ){
+                output.innerText = main(mnum);
+            }else if(mnum > 10 && mnum < 20){
+                output.innerText = main(parseInt(input.value.charAt(1))) +'teen';
+            }else if(mnum > 20 && mnum < 100 && !decimalArr.includes(mnum)){
+                output.innerText = decimal(parseInt(input.value.charAt(0)))+'-'+main(parseInt(input.value.charAt(1)));
+            }else if(decimalArr.includes(mnum)){
+                output.innerText = decimal(parseInt(input.value.charAt(0)));
+            }else if(mnum > 100 && mnum < 1000 && !centenasArr.includes(mnum) ){
+                output.innerText = centenas(parseInt(input.value.charAt(0)))+' '+decimal(parseInt(input.value.charAt(1))) +'-'+ main(parseInt(input.value.charAt(2)));
+            }else if(mnum > 1000 && mnum < 10000 && !milharesArr.includes(mnum)){
+                output.innerText = milhares(parseInt(input.value.charAt(0)))+' '+centenas(parseInt(input.value.charAt(1))) +'-'+ decimal(parseInt(input.value.charAt(2))) + '-' + main(parseInt(input.value.charAt(3)));
+            }else if(milharesArr.includes(mnum)){
+                output.innerText = milhares(parseInt(input.value.charAt(0)));
+            }
+        });
+
+        function translated(num){
+
+        }
+
+
+        function decimal(num){
+            let out = '';
+            switch(num){
+                case 1:
+                    out = 'Teen';
+                    break;
+                case 2:
+                    out = 'Tweenty';
+                    break;
+                case 3:
+                    out = 'Thirty';
+                    break;
+                case 4:
+                    out = 'Fouthy';
+                    break;
+                case 5:
+                    out = 'Fifty';
+                    break;
+                case 6:
+                    out = 'Sixty';
+                    break;
+                case 7:
+                    out = 'Seventy';
+                    break;
+                case 8:
+                    out = 'Eighty';
+                    break;
+                case 9:
+                    out = 'Ninety';
+                    break;
+                
+            }
+            return out;
+        }
+
+        function centenas(num){
+            let out = '';
+            if(num == 1){
+                out = 'Hundred';
+            }else{
+                out = main(num) +'-Hundred';
+            }
+            return out;
+        }
+
+        function milhares(num){
+            let out = '';
+            if(num == 1){
+                out = 'Thousand';
+            }else{
+                out = main(num) +'-Thousand';
+            }
+            return out;
+        }
+
+        function main(num){
+            let out = '';
+            switch(num){
+                case 1:
+                    out = 'One';
+                    break;
+                case 2:
+                    out = 'Two';
+                    break;
+                case 3:
+                    out = 'Three';
+                    break;
+                case 4:
+                    out = 'Four';
+                    break;
+                case 5:
+                    out = 'Five';
+                    break;
+                case 6:
+                    out = 'Six';
+                    break;
+                case 7:
+                    out = 'Seven';
+                    break;
+                case 8:
+                    out = 'Eight';
+                    break;
+                case 9:
+                    out = 'Nine';
+                    break;  
+            }
+            return out;
+        }
+    </script>
+</body>
+</html>

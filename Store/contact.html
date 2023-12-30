@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+  <link rel="manifest" href="logo/site.webmanifest">
+  <link rel="mask-icon" href="logo/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#0073ab">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <header>
+    <a href="" class="logo">Cashew Nuts</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="#">Order</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fa fa-bars" id="menu-bars"></i>
+      <i class="fa-solid fa-cart-shopping" id="open-cart"></i>
+      <i class="fa fa-user" id="user"></i>
+    </div>
+
+    <div class="cart">
+      <div class="title">Your cart</div>
+      <div class="cart-container">
+        <div class="cart-content">
+          <img src="images/g1.png" alt="">
+          <div class="details">
+            <div class="title cart-title">Castanhas 1</div>
+            <div class="item-price">$26</div>
+            <input type="number" value="1" min="1" class="item-quantity">
+          </div>
+          <i class="fa-solid fa-trash remove-cart" id="remove-cart"></i>
+        </div>
+
+      </div>
+      <div class="total">
+        <div class="total-title">Total: </div>
+        <div class="total-price">$200</div>
+      </div>
+      <button class="btn btn-buy">Buy Now</button>
+      <i class="fa-solid fa-xmark" id="close-cart"></i>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fa fa-location-dot"></i>
+          <div class="topic">Location</div>
+          <div class="topic">
+            <Address></Address>
+          </div>
+          <div class="text-one">Shurkhet, NP12</div>
+          <div class="text-two">Aerodromo 3002</div>
+        </div>
+        <div class="phone details">
+          <i class="fa fa-phone"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+258 12 345 6789</div>
+          <div class="text-two">+248 98 765 4321</div>
+        </div>
+        <div class="email details">
+          <i class="fa fa-phone"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">cashews.info@gmail.com</div>
+          <div class="text-two">cashews.report@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam nemo veritatis ducimus.</p>
+
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Escreva o seu nome">
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Escreva o seu email">
+          </div>
+          <div class="input-box message-box">
+            <textarea name="" id=""></textarea>
+          </div>
+          <a href="#" class="btn">Send now</a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast">
+    <div class="toast-content">
+      <i class="fa-solid fa-trash toast-icon"></i>
+
+      <div class="message">
+        <span class="text-1 title">Success</span>
+        <span class="text-2 message-content">Your are loged with succes</span>
+      </div>
+
+      <i class="fa-solid fa-xmark" id="close-toast"></i>
+
+      <div class="progress pg"></div>
+    </div>
+  </div>
+
+  <section class="footer contact-section">
+    <div class="box-container">
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Faq</a>
+        <a href="#">Cart</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#">+258 84 123 4567</a>
+        <a href="#">+258 86 123 4567</a>
+        <a href="#">cashewnuts@gmail.com</a>
+        <a href="#">Manhica, Mozambique - 3002</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="#">facebook</a>
+        <a href="#">Istagram</a>
+        <a href="#">Whatsapp</a>
+      </div>
+    </div>
+    <div class="credit">&copy; 2022 by <span>Ers</span></div>
+  </section>
+
+  <script src="other.js"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

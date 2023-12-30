@@ -1,0 +1,142 @@
+
+
+.cont {
+    width: 350px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    text-align: center;
+    position: absolute;
+    
+    left: -100%;
+    bottom: 10px;
+    transform: translateY(-10%);
+    text-align: left;
+    font-size: 100%;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cont.visible{
+    display: flex;
+    left: 20px;
+}
+
+.cont p{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cont .card {
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    background: #3a79cc;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 15px;
+    box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 5px;
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.msg-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.cont .card .input {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont .card .input input {
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+    border: none;
+    font-weight: 100;
+    background: transparent;
+    letter-spacing: 1px;
+}
+
+.cont .card .input input::placeholder {
+    color: #e2e2e2b2;
+}
+
+.cont .card .msg-box .send{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.cont .card .msg-box .send:hover i{
+    color: green;
+    animation-name: an;
+    animation-duration: 1s;
+}
+
+.cont .card .close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.cont .card .close:hover{
+    color: tomato;
+}
+
+@keyframes an{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.cont .card .msg-box .send i{
+    font-size: 22px
+}
+
+.fa.fa-map {
+    position: relative;
+    font-size: 50px;
+    color: #00ff03;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 579px){
+    .cont{
+        width: 80%;
+        left: -100%;
+        
+    }
+    .cont.visible{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
